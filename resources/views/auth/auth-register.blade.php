@@ -51,7 +51,18 @@
                         <!-- /Logo -->
                         <h4 class="mb-1 pt-2">{{ __('translate.register') }} 🚀</h4>
                         <p class="mb-4">{{ __('translate.register_text') }} </p>
-
+                        @if($possible == 0)
+                        <div class="alert alert-danger d-flex align-items-baseline" role="alert">
+                            <span class="alert-icon alert-icon-lg text-danger me-2">
+                              <i class="ti ti-user ti-sm"></i>
+                            </span>
+                            <div class="d-flex flex-column ps-1">
+                              <h5 class="alert-heading mb-2">{{__('translate.registration_unavailable')}}</h5>
+                              <p class="mb-0">{{__('translate.registration_unavailable_details')}}</p>
+                              </button>
+                            </div>
+                        </div>
+                        @else
                         <form id="formAuthentication" class="mb-3" action="{{ route('register') }}" method="POST"
                             enctype="multipart/form-data">
                             @csrf
@@ -135,14 +146,14 @@
                                 {{ __('translate.sign_up') }}
                             </button>
                         </form>
-
+                        @endif
                         <p class="text-center">
                             <span>{{ __('translate.already_have_an_account') }}</span>
                             <a href="{{ route('login') }}">
                                 <span>{{ __('translate.sign_in_instead') }}</span>
                             </a>
                         </p>
-
+                        @if($possible == 1 && $possible_social == 1)
                         <div class="divider my-4">
                             <div class="divider-text">{{ __('translate.or') }}</div>
                         </div>
@@ -160,6 +171,7 @@
                                 <i class="tf-icons fa-brands fa-twitter fs-5"></i>
                             </a>
                         </div>
+                        @endif
                     </div>
                 </div>
                 <!-- Register Card -->

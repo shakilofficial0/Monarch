@@ -14,6 +14,9 @@ return [
     'or' => 'oder',
     'minutes_left' => 'Minute(n) übrig',
     'login_forbidden' => 'Anmeldung durch Administrator eingeschränkt. Bitte versuchen Sie es erneut, wenn es verfügbar ist.',
+    'login_unavailable' => 'Anmeldung eingeschränkt! 😢',
+    'login_unavailable_details' => 'Der Zugriff aller Benutzer wurde eingeschränkt. Nur Systemadministratoren dürfen sich anmelden. Bitte warten Sie, bis wir unsere Meinung ändern. Vielen Dank',
+    
     // Forgot Password (Passwort vergessen)
     'forgot_password_text' => 'Geben Sie Ihre E-Mail-Adresse ein, und wir senden Ihnen Anweisungen zum Zurücksetzen Ihres Passworts.',
     'email' => 'E-Mail',
@@ -48,5 +51,8 @@ return [
     'sign_up' => 'Registrieren',
     'already_have_an_account' => 'Bereits ein Konto?',
     'sign_in_instead' => 'Stattdessen anmelden',
+    'registration_unavailable' => 'Registrierung geschlossen',
+    'registration_unavailable_details' => 'Entschuldigung, im Moment akzeptieren wir keine neuen Benutzer. Eine Einladung von unserem bestehenden Benutzer könnte Ihren Anmelde-Wunsch erfüllen. Andernfalls müssen Sie warten, bis wir unsere Meinung ändern. Danke',
+    
 
 ];

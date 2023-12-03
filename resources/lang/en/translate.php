@@ -14,6 +14,8 @@ return [
     'or' => 'or',
     'minutes_left' => 'Minute(s) Left',
     'login_forbidden' => 'Login Restricted by Administrator. Please try again when it is Available.',
+    'login_unavailable' => 'Login Restricted ! 😢',
+    'login_unavailable_details' => 'All User\'s access has been restricted. Only System Admins are allowed to log. Please Wait until we change our mind. Thank You',
     // Forgot Password
     'forgot_password_text' => 'Enter your email and we will send you instructions to reset your password',
     'email' => 'Email',
@@ -49,4 +51,6 @@ return [
     'sign_up' => 'Sign Up',
     'already_have_an_account' => 'Already have an account?',
     'sign_in_instead' => 'Sign in instead',
+    'registration_unavailable' => 'Registration Closed',
+    'registration_unavailable_details' => 'Sorry But we are not accepting new user anymore. Please Get an invitation to Sign up Or wait until we change our mind. Thank you',
 ];

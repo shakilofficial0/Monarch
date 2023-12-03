@@ -15,6 +15,9 @@ return [
 'or' => 'ou',
 'minutes_left' => 'Minute(s) restante(s)',
 'login_forbidden' => 'Connexion restreinte par l\'administrateur. Veuillez réessayer quand elle sera disponible.',
+'login_unavailable' => 'Connexion restreinte ! 😢',
+'login_unavailable_details' => 'L\'accès de tous les utilisateurs a été restreint. Seuls les administrateurs système sont autorisés à se connecter. Veuillez patienter jusqu\'à ce que nous changions d\'avis. Merci',
+    
 // Mot de passe oublié
 'forgot_password_text' => 'Saisissez votre adresse e-mail et nous vous enverrons des instructions pour réinitialiser votre mot de passe',
 'email' => 'Adresse e-mail',
@@ -50,4 +53,7 @@ return [
 'sign_up' => 'S\'inscrire',
 'already_have_an_account' => 'Vous avez déjà un compte ?',
 'sign_in_instead' => 'Se connecter à la place',
+'registration_unavailable' => 'Inscription fermée',
+'registration_unavailable_details' => 'Désolé, nous n\'acceptons actuellement aucun nouvel utilisateur. Une invitation de notre utilisateur existant pourrait réaliser votre souhait d\'inscription. Sinon, vous devez attendre que nous changions d\'avis. Merci',
+    
 ];

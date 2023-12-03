@@ -47,12 +47,16 @@ class NukeServiceProvider extends ServiceProvider
         });
 
         Fortify::loginView(function () {
+            $check_login_possible = SystemSettings::where('name', 'login')->first()->value;
+            $check_social_login_possible = SystemSettings::where('name', 'social-login')->first()->value;
 
-            return view('auth.auth-login');
+            return view('auth.auth-login', ['possible_social' => $check_social_login_possible, 'possible' => $check_login_possible]);
         });
 
         Fortify::registerView(function () {
-            return view('auth.auth-register');
+            $check_registration_possible = SystemSettings::where('name', 'registration')->first()->value;
+            $check_social_registration_possible = SystemSettings::where('name', 'social-registration')->first()->value;
+            return view('auth.auth-register', ['possible' => $check_registration_possible, 'possible_social' => $check_social_registration_possible]);
         });
 
         Fortify::requestPasswordResetLinkView(function () {

@@ -15,6 +15,9 @@ return [
 'or' => 'o',
 'minutes_left' => 'Minuto(s) restante(s)',
 'login_forbidden' => 'Inicio de sesión restringido por el administrador. Por favor, inténtelo de nuevo cuando esté disponible.',
+'login_unavailable' => '¡Inicio de sesión restringido! 😢',
+'login_unavailable_details' => 'Se ha restringido el acceso de todos los usuarios. Solo se permite el inicio de sesión a los administradores del sistema. Por favor, espere hasta que cambiemos de opinión. Gracias',
+    
 // Olvidó la contraseña
 'forgot_password_text' => 'Ingrese su correo electrónico y le enviaremos instrucciones para restablecer su contraseña',
 'email' => 'Correo electrónico',
@@ -50,4 +53,7 @@ return [
 'sign_up' => 'Registrarse',
 'already_have_an_account' => '¿Ya tienes una cuenta?',
 'sign_in_instead' => 'Inicia sesión en su lugar',
+'registration_unavailable' => 'Registro cerrado',
+'registration_unavailable_details' => 'Lo siento, ahora no estamos aceptando nuevos usuarios. Una invitación de nuestro usuario existente puede cumplir tu deseo de registrarte. De lo contrario, tendrás que esperar hasta que cambiemos de opinión. Gracias',
+    
 ];

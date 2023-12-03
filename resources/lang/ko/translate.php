@@ -15,6 +15,9 @@ return [
 'or' => '또는',
 'minutes_left' => '분 남음',
 'login_forbidden' => '관리자에 의해 로그인이 제한되었습니다. 사용 가능해지면 다시 시도하십시오.',
+'login_unavailable' => '로그인 제한됨! 😢',
+'login_unavailable_details' => '모든 사용자의 접근이 제한되었습니다. 시스템 관리자만 로그인이 허용됩니다. 우리가 마음을 바꿀 때까지 기다려 주세요. 감사합니다',
+    
 // 비밀번호 잊음
 'forgot_password_text' => '이메일을 입력하시면 비밀번호 재설정 안내를 전송해드립니다',
 'email' => '이메일',
@@ -50,4 +53,7 @@ return [
 'sign_up' => '가입하기',
 'already_have_an_account' => '이미 계정이 있으신가요?',
 'sign_in_instead' => '대신 로그인하기',
+'registration_unavailable' => '등록 종료',
+'registration_unavailable_details' => '죄송합니다만, 현재 새로운 사용자를 받지 않고 있습니다. 기존 사용자의 초대로 가입을 완료할 수 있습니다. 그렇지 않으면 마음을 바꿀 때까지 기다려야 합니다. 감사합니다',
+    
 ];

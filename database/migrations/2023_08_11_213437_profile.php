@@ -23,7 +23,7 @@ return new class extends Migration
             $table->integer('zip')->nullable();
             $table->string('status')->default(false);
             $table->text('profile_image')->nullable();
-            $table->json('login_details')->nullable();
+            $table->text('system_role')->nullable();
             $table->timestamps();
         });
     }
