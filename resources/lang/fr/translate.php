@@ -3,7 +3,7 @@
 
 return [
     // Page de connexion
-'welcome_message' => 'Bienvenue sur The CodeBumble ! 👋',
+'welcome_message' => 'Bienvenue sur The Monarch ! 👋',
 'welcome_short_message' => 'Veuillez vous connecter à votre compte et commencer l\'aventure',
 'email_or_username' => 'Adresse e-mail ou nom d\'utilisateur',
 'password' => 'Mot de passe',

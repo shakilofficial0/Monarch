@@ -76,9 +76,9 @@ jobs:
           password: ${{ SECRETS.SERVER_PASSWORD }}
           envs: GITHUB_SHA
           script: |
-            rm -rf domains/codebumble.net/public_html/cbl_system
-            mkdir -p domains/codebumble.net/public_html/cbl_system
-            tar xzf domains/codebumble.net/public_html/${GITHUB_SHA}.tar.gz -C "domains/codebumble.net/public_html/cbl_system"
+            rm -rf domains/codebumble.net/public_html/shakil_projects/monarch
+            mkdir -p domains/codebumble.net/public_html/shakil_projects/monarch
+            tar xzf domains/codebumble.net/public_html/shakil_projects/${GITHUB_SHA}.tar.gz -C "domains/codebumble.net/public_html/shakil_projects/monarch"
 
   active-release:
     name: Codebumble Server 1 - Active Release
@@ -89,7 +89,7 @@ jobs:
         uses: appleboy/ssh-action@master
         env:
           GITHUB_SHA: ${{github.sha}}
-          BASE_PATH: domains/codebumble.net/public_html/cbl_system
+          BASE_PATH: domains/codebumble.net/public_html/shakil_projects/monarch
           PROJECT_ENV: ${{ SECRETS.PROJECT_ENV }}
           CONF_CACHE: ${{ SECRETS.CONF_CACHE }}
           ROUTE_CACHE: ${{ SECRETS.ROUTE_CACHE }}
@@ -117,7 +117,7 @@ jobs:
       - name: Migration Init
         uses: appleboy/ssh-action@master
         env:
-          BASE_PATH: domains/codebumble.net/public_html/cbl_system
+          BASE_PATH: domains/codebumble.net/public_html/shakil_projects/monarch
           ARTISAN_MIGRATE: ${{ SECRETS.ARTISAN_MIGRATE }}
         with:
           envs: BASE_PATH,ARTISAN_MIGRATE,
@@ -147,5 +147,5 @@ jobs:
           username: ${{ SECRETS.SERVER_USERNAME }}
           password: ${{ SECRETS.SERVER_PASSWORD }}
           script: |
-            rm -rf domains/codebumble.net/public_html/${{github.sha}}.tar.gz
-            rm -rf domains/codebumble.net/public_html/cbl_system/${{github.sha}}.txt
+            rm -rf domains/codebumble.net/public_html/shakil_projects/${{github.sha}}.tar.gz
+            rm -rf domains/codebumble.net/public_html/shakil_projects/monarch/${{github.sha}}.txt

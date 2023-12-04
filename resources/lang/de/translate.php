@@ -2,7 +2,7 @@
 
 
 return [
-    'welcome_message' => 'Willkommen bei CodeBumble! 👋',
+    'welcome_message' => 'Willkommen bei Monarch! 👋',
     'welcome_short_message' => 'Bitte melden Sie sich an und starten Sie das Abenteuer',
     'email_or_username' => 'E-Mail oder Benutzername',
     'password' => 'Passwort',
