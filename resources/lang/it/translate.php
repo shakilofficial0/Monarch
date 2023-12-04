@@ -3,7 +3,7 @@
 
 return [
     // Pagina di accesso
-'welcome_message' => 'Benvenuto su The Monarch! 👋',
+'welcome_message' => 'Benvenuto su The '.config('variables.templateName').'! 👋',
 'welcome_short_message' => 'Effettua l\'accesso al tuo account e inizia l\'avventura',
 'email_or_username' => 'Email o nome utente',
 'password' => 'Password',

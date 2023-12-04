@@ -3,7 +3,7 @@
 
 return [
     // 로그인 페이지
-'welcome_message' => 'The Monarch에 오신 것을 환영합니다! 👋',
+'welcome_message' => 'The '.config('variables.templateName').'에 오신 것을 환영합니다! 👋',
 'welcome_short_message' => '계정으로 로그인하고 모험을 시작하세요',
 'email_or_username' => '이메일 또는 사용자 이름',
 'password' => '비밀번호',

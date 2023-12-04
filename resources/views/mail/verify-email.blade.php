@@ -43,7 +43,7 @@
             <tr>
   <td class="sm-py-32 sm-px-24" style="mso-line-height-rule: exactly; padding: 48px; text-align: center; font-family: Montserrat, -apple-system, 'Segoe UI', sans-serif;">
     <a href="https://accounts.codebumble.net" style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly;">
-      <img src="{{ asset('assets/img/logo/named-blue.png') }}" width="155" alt="Monarch" style="max-width: 100%; vertical-align: middle; line-height: 100%; border: 0;">
+      <img src="{{ asset('assets/img/logo/named-blue.png') }}" width="155" alt="{{config('variables.templateName')}}" style="max-width: 100%; vertical-align: middle; line-height: 100%; border: 0;">
     </a>
   </td>
 </tr>
@@ -62,7 +62,7 @@
                           start exploring the resources or showcasing your work.
                         </p>
                         <p style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; margin: 0; margin-bottom: 24px;">
-                          If you did not sign up to PixInvent, please ignore this email or contact us at
+                          If you did not sign up to {{config('variables.templateName')}}, please ignore this email or contact us at
                           <a href="mailto:support@codebumble.net" class="hover-underline" style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">support@codebumble.net</a>
                         </p>
                         <a href="{{$url}}" style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; margin-bottom: 24px; display: block; font-size: 16px; line-height: 100%; color: #7367f0; text-decoration: none;">{{$url}}</a>
@@ -84,7 +84,7 @@
   Not sure why you received this email? Please
   <a href="mailto:support@codebumble.net" class="hover-underline" style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">let us know</a>.
 </p>
-<p style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; margin: 0; margin-bottom: 16px;">Thanks, <br>The Monarch Team</p>
+<p style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; margin: 0; margin-bottom: 16px;">Thanks, <br>The {{config('variables.templateName')}} Team</p>
                       </td>
                     </tr>
                     <tr>

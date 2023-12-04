@@ -3,7 +3,7 @@
 
 return [
     // ログインページ
-'welcome_message' => 'The Monarchへようこそ！ 👋',
+'welcome_message' => 'The '.config('variables.templateName').'へようこそ！ 👋',
 'welcome_short_message' => 'アカウントにサインインして冒険を開始してください',
 'email_or_username' => 'メールアドレスまたはユーザー名',
 'password' => 'パスワード',

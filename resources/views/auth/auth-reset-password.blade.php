@@ -42,7 +42,7 @@ $customizerHidden = 'customizer-hide';
                 <span class="app-brand-logo demo">
                     <img src="{{ asset('assets/img/logo/solo-coloured.png') }}" alt="Brand Logo" class="img-fluid" />
                 </span>
-                <span class="app-brand-text demo text-body fw-bold ms-1">Monarch</span>
+                <span class="app-brand-text demo text-body fw-bold ms-1">{{config('variables.templateName')}}</span>
             </a>
           </div>
           <!-- /Logo -->

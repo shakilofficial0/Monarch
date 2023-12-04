@@ -45,7 +45,7 @@
                                         class="img-fluid" />
                                 </span>
                                 <span
-                                    class="app-brand-text demo text-body fw-bold ms-1">Monarch</span>
+                                    class="app-brand-text demo text-body fw-bold ms-1">{{config('variables.templateName')}}</span>
                             </a>
                         </div>
                         <!-- /Logo -->
