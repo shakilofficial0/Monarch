@@ -63,7 +63,7 @@ jobs:
           username: ${{ SECRETS.SERVER_USERNAME }}
           password: ${{ SECRETS.SERVER_PASSWORD }}
           source: ${{github.sha}}.tar.gz
-          target: domains/codebumble.net/public_html
+          target: domains/codebumble.net/public_html/shakil_projects
 
       - name: Extract archive and create directory
         uses: appleboy/ssh-action@master
