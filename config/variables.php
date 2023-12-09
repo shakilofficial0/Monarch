@@ -8,6 +8,8 @@ return [
   "templateVersion" => "1.0.0",
   "templateFree" => false,
   "templateDescription" => "Enjoy your Movie Time with Your Family and Friends. Lets Make it more easier.",
+  "support_mail" => "support@codebumble.net",
+  "url" => "monarch.codebumble.net",
   "templateKeyword" => "movie, cinema, tvseries, film, fileserver",
   "licenseUrl" => "https://themeforest.net/licenses/standard",
   "livePreview" => "https://demos.pixinvent.com/vuexy-html-admin-template/landing/",
@@ -21,9 +23,9 @@ return [
   "gitRepo" => "pixinvent",
   "gitRepoAccess" => "vuexy-html-admin-template",
   "githubFreeUrl" => "https://tools.pixinvent.com/github/github-access",
-  "facebookUrl" => "https://www.facebook.com/pixinvents/",
-  "twitterUrl" => "https://twitter.com/pixinvents",
+  "facebookUrl" => "https://facebook.com/codebumble",
+  "twitterUrl" => "https://twitter.com/codebumble",
   "githubUrl" => "https://github.com/pixinvent",
   "dribbbleUrl" => "https://dribbble.com/pixinvent",
-  "instagramUrl" => "https://www.instagram.com/pixinvents/"
+  "instagramUrl" => "https://instagram.com/codebumble"
 ];

@@ -63,7 +63,7 @@
                         </p>
                         <p style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; margin: 0; margin-bottom: 24px;">
                           If you did not sign up to {{config('variables.templateName')}}, please ignore this email or contact us at
-                          <a href="mailto:support@codebumble.net" class="hover-underline" style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">support@codebumble.net</a>
+                          <a href="{{config('variables.support_mail')}}" class="hover-underline" style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">{{config('variables.support_mail')}}</a>
                         </p>
                         <a href="{{$url}}" style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; margin-bottom: 24px; display: block; font-size: 16px; line-height: 100%; color: #7367f0; text-decoration: none;">{{$url}}</a>
                         <table cellpadding="0" cellspacing="0" role="presentation">
@@ -82,7 +82,7 @@
 </table>
 <p style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; margin: 0; margin-bottom: 16px;">
   Not sure why you received this email? Please
-  <a href="mailto:support@codebumble.net" class="hover-underline" style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">let us know</a>.
+  <a href="mailto:{{config('variables.support_mail')}}" class="hover-underline" style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; color: #7367f0; text-decoration: none;">let us know</a>.
 </p>
 <p style="font-family: 'Montserrat', sans-serif; mso-line-height-rule: exactly; margin: 0; margin-bottom: 16px;">Thanks, <br>The {{config('variables.templateName')}} Team</p>
                       </td>

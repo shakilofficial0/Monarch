@@ -197,6 +197,7 @@ return [
     App\Providers\MenuServiceProvider::class,
     App\Providers\NukeServiceProvider::class,
     App\Providers\FortifyServiceProvider::class,
+    App\Providers\ConfigUpdaterProvider::class,
 
   ],
 

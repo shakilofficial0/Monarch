@@ -25,7 +25,7 @@ Route::middleware(['auth', 'verified'])->prefix('hawk')->group(function () {
     Route::get('home', [HawkController::class, 'index'])->name('hawk.home');
     Route::get('profile', [ProfileController::class, 'index'])->name('hawk.profile');
     Route::get('test', function(Request $request){
-        return Auth::user()->hasRole();
+        return config('variables.templateName');
     })->middleware('role:admin');
 });
 

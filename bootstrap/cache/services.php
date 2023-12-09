@@ -39,6 +39,7 @@
     35 => 'App\\Providers\\MenuServiceProvider',
     36 => 'App\\Providers\\NukeServiceProvider',
     37 => 'App\\Providers\\FortifyServiceProvider',
+    38 => 'App\\Providers\\ConfigUpdaterProvider',
   ),
   'eager' => 
   array (
@@ -66,6 +67,7 @@
     21 => 'App\\Providers\\MenuServiceProvider',
     22 => 'App\\Providers\\NukeServiceProvider',
     23 => 'App\\Providers\\FortifyServiceProvider',
+    24 => 'App\\Providers\\ConfigUpdaterProvider',
   ),
   'deferred' => 
   array (
