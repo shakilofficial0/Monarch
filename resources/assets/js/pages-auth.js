@@ -411,7 +411,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
               }
             }
           },
-          terms: {
+          'register-privacy-policy': {
             validators: {
               notEmpty: {
                 message: message.terms.notEmpty
