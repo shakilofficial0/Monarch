@@ -14,6 +14,69 @@ body {
   background: $body-bg !important;
 }
 
+.dropdown-menu,
+.popover,
+.toast,
+.flatpickr-calendar,
+.datepicker.datepicker-inline,
+.datepicker.datepicker-inline table,
+.daterangepicker,
+.pcr-app,
+.ui-timepicker-wrapper,
+.twitter-typeahead .tt-menu,
+.tagify__dropdown,
+.swal2-popup,
+.select2-dropdown,
+.menu-horizontal .menu-inner > .menu-item.open .menu-sub,
+div.dataTables_wrapper .dt-button-collection {
+  outline: none;
+  box-shadow: none !important;
+  border: 1px solid $border-color !important;
+}
+
+.flatpickr-days,
+.flatpickr-time {
+  border-width: 0 !important;
+}
+
+// Bootstrap select > double border fix
+.dropdown-menu .dropdown-menu {
+  border: none !important;
+}
+.datepicker.datepicker-inline {
+  width: fit-content;
+  border-radius: $border-radius;
+}
+.modal-content,
+.offcanvas,
+.shepherd-element,
+div.dataTables_wrapper .dt-button-collection > div[role='menu'] {
+  box-shadow: none !important;
+}
+.select2-dropdown {
+  border-color: $border-color !important;
+}
+.bs-popover-start > .popover-arrow::before,
+.bs-popover-auto[data-popper-placement^='left'] > .popover-arrow::before {
+  border-left-color: $border-color !important;
+  right: -1px;
+}
+.bs-popover-end > .popover-arrow::before,
+.bs-popover-auto[data-popper-placement^='right'] > .popover-arrow::before {
+  border-right-color: $border-color !important;
+  left: -1px;
+}
+.bs-popover-top > .popover-arrow::before,
+.bs-popover-auto[data-popper-placement^='top'] > .popover-arrow::before {
+  border-top-color: $border-color !important;
+  bottom: -1px;
+}
+.bs-popover-bottom > .popover-arrow::before,
+.bs-popover-auto[data-popper-placement^='bottom'] > .popover-arrow::before {
+  border-bottom-color: $border-color !important;
+  top: -1px;
+}
+
 @include template-common-theme($primary-color);
 @include template-libs-dark-theme($primary-color);
 @include template-pages-theme($primary-color);
@@ -73,7 +136,7 @@ body {
   }
 }
 
-@include media-breakpoint-up(xl) {
+@include media-breakpoint-up($menu-collapsed-layout-breakpoint) {
   .layout-menu {
     box-shadow: 0 0 0 1px $border-color;
   }
@@ -109,7 +172,7 @@ body {
 }
 
 // Accordion
-.accordion {
+.accordion:not(.accordion-bordered) {
   .accordion-item {
     border-top: 1px solid $card-border-color;
     box-shadow: none !important;
@@ -237,6 +300,21 @@ body {
     .timeline-indicator-advanced {
       i {
         background-color: $card-bg;
+      }
+    }
+  }
+}
+
+// App email rear card border effect
+.app-email {
+  .app-email-view {
+    .email-card-last {
+      &:before {
+        border: 1px solid $border-color;
+      }
+
+      &:after {
+        border: 1px solid $border-color;
       }
     }
   }

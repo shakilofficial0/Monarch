@@ -14,34 +14,32 @@ $menuCollapsed = ($configData['menuCollapsed'] === 'layout-menu-collapsed') ? js
   <script src="{{ asset('assets/js/config.js') }}"></script>
 
 @if ($configData['hasCustomizer'])
-  <script>
-    window.templateCustomizer = new TemplateCustomizer({
-      cssPath: '',
-      themesPath: '',
-      defaultStyle: "{{$configData['style']}}",
-      defaultContentLayout: "{{($configData['contentLayout'] ?? '')}}",
-      defaultShowDropdownOnHover: {{$configData['showDropdownOnHover']}}, // true/false (for horizontal layout only)
-      displayCustomizer: {{$configData['displayCustomizer']}},
-      defaultMenuCollapsed: "{{$menuCollapsed}}",
-      lang: '{{ session()->get('locale') ?? app()->getLocale() }}',
-      pathResolver: function(path) {
-        var resolvedPaths = {
-          // Core stylesheets
-          @foreach (['core'] as $name)
-            '{{ $name }}.css': '{{ asset(mix("assets/vendor/css{$configData['rtlSupport']}/{$name}.css")) }}',
-            '{{ $name }}-dark.css': '{{ asset(mix("assets/vendor/css{$configData['rtlSupport']}/{$name}-dark.css")) }}',
-          @endforeach
+<script>
+  window.templateCustomizer = new TemplateCustomizer({
+    cssPath: '',
+    themesPath: '',
+    defaultStyle: "{{$configData['styleOpt']}}",
+    defaultShowDropdownOnHover: "{{$configData['showDropdownOnHover']}}", // true/false (for horizontal layout only)
+    displayCustomizer: "{{$configData['displayCustomizer']}}",
+    lang: '{{ app()->getLocale() }}',
+    pathResolver: function(path) {
+      var resolvedPaths = {
+        // Core stylesheets
+        @foreach (['core'] as $name)
+          '{{ $name }}.css': '{{ asset(mix("assets/vendor/css{$configData['rtlSupport']}/{$name}.css")) }}',
+          '{{ $name }}-dark.css': '{{ asset(mix("assets/vendor/css{$configData['rtlSupport']}/{$name}-dark.css")) }}',
+        @endforeach
 
-          // Themes
-          @foreach (['default', 'bordered', 'semi-dark'] as $name)
-            'theme-{{ $name }}.css': '{{ asset(mix("assets/vendor/css{$configData['rtlSupport']}/theme-{$name}.css")) }}',
-            'theme-{{ $name }}-dark.css':
-            '{{ asset(mix("assets/vendor/css{$configData['rtlSupport']}/theme-{$name}-dark.css")) }}',
-          @endforeach
-        }
-        return resolvedPaths[path] || path;
-      },
-      'controls': <?php echo json_encode($configData['customizerControls']); ?>,
-    });
-  </script>
+        // Themes
+        @foreach (['default', 'bordered', 'semi-dark'] as $name)
+          'theme-{{ $name }}.css': '{{ asset(mix("assets/vendor/css{$configData['rtlSupport']}/theme-{$name}.css")) }}',
+          'theme-{{ $name }}-dark.css':
+          '{{ asset(mix("assets/vendor/css{$configData['rtlSupport']}/theme-{$name}-dark.css")) }}',
+        @endforeach
+      }
+      return resolvedPaths[path] || path;
+    },
+    'controls': <?php echo json_encode($configData['customizerControls']); ?>,
+  });
+</script>
 @endif

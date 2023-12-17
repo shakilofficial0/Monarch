@@ -17,7 +17,6 @@ $isMenu = ($isMenu ?? true);
 $isFlex = ($isFlex ?? false);
 $isFooter = ($isFooter ?? true);
 $customizerHidden = ($customizerHidden ?? '');
-$pricingModal = ($pricingModal ?? false);
 
 /* HTML Classes */
 $menuFixed = (isset($configData['menuFixed']) ? $configData['menuFixed'] : '');
@@ -64,11 +63,6 @@ $containerNav = ($containerNav ?? 'container-xxl');
 
             @yield('content')
 
-            <!-- pricingModal -->
-            @if ($pricingModal)
-            @include('_partials/_modals/modal-pricing')
-            @endif
-            <!--/ pricingModal -->
           </div>
           <!-- / Content -->
 

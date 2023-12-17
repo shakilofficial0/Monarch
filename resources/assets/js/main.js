@@ -164,6 +164,43 @@ if (document.getElementById('layout-menu')) {
   // Run switchImage function based on the stored style
   switchImage(storedStyle);
 
+  let languageDropdown = document.getElementsByClassName('dropdown-language');
+
+  if (languageDropdown.length) {
+    let dropdownItems = languageDropdown[0].querySelectorAll('.dropdown-item');
+    const dropdownActiveItem = languageDropdown[0].querySelector('.dropdown-item.active');
+
+    directionChange(dropdownActiveItem.dataset.textDirection);
+
+    for (let i = 0; i < dropdownItems.length; i++) {
+      dropdownItems[i].addEventListener('click', function () {
+        let textDirection = this.getAttribute('data-text-direction');
+        window.templateCustomizer.setLang(this.getAttribute('data-language'));
+        directionChange(textDirection);
+      });
+    }
+    function directionChange(textDirection) {
+      if (textDirection === 'rtl') {
+        if (localStorage.getItem('templateCustomizer-' + templateName + '--Rtl') !== 'true')
+          window.templateCustomizer ? window.templateCustomizer.setRtl(true) : '';
+      } else {
+        if (localStorage.getItem('templateCustomizer-' + templateName + '--Rtl') === 'true')
+          window.templateCustomizer ? window.templateCustomizer.setRtl(false) : '';
+      }
+    }
+  }
+
+  // add on click javascript for template customizer reset button id template-customizer-reset-btn
+
+  setTimeout(function () {
+    let templateCustomizerResetBtn = document.querySelector('.template-customizer-reset-btn');
+    if (templateCustomizerResetBtn) {
+      templateCustomizerResetBtn.onclick = function () {
+        window.location.href = baseUrl + 'lang/en';
+      };
+    }
+  }, 1500);
+
   // Notification
   // ------------
   const notificationMarkAsReadAll = document.querySelector('.dropdown-notifications-all');

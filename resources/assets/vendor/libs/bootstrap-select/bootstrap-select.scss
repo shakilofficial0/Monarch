@@ -163,7 +163,7 @@ html[class] .bootstrap-select.form-select {
       .dropdown-menu {
         &[data-popper-placement='top-start'],
         &[data-popper-placement='top-end'] {
-          box-shadow: 0 -0.2rem 1.25rem rgba(light.rgba-to-hex(light.$gray-500, light.$rgba-to-hex-bg), 0.4) !important;
+          box-shadow: 0 -0.2rem 1.25rem rgba(light.rgba-to-hex(light.$gray-500, light.$rgba-to-hex-bg), 0.4);
         }
         .notify {
           background: light.$popover-bg;
@@ -192,7 +192,7 @@ html[class] .bootstrap-select.form-select {
       .dropdown-menu {
         &[data-popper-placement='top-start'],
         &[data-popper-placement='top-end'] {
-          box-shadow: 0 -0.2rem 1.25rem rgba(15, 20, 34, 0.55) !important;
+          box-shadow: 0 -0.2rem 1.25rem rgba(15, 20, 34, 0.55);
         }
         .notify {
           background: dark.$popover-bg;

@@ -698,11 +698,11 @@ span.flatpickr-weekday {
     // Dimensions
     .flatpickr-calendar,
     .flatpickr-days {
-      width: calc(#{$flatpickr-width} + #{light.$dropdown-border-width * 2}) !important;
+      width: calc(#{$flatpickr-width} + calc(#{light.$dropdown-border-width} * 2)) !important;
     }
 
     .flatpickr-calendar.hasWeeks {
-      width: calc(#{$flatpickr-width + $flatpickr-cell-size} + #{light.$dropdown-border-width * 3}) !important;
+      width: calc(#{$flatpickr-width + $flatpickr-cell-size} + calc(#{light.$dropdown-border-width} * 3)) !important;
     }
 
     .flatpickr-calendar.open {
@@ -711,11 +711,11 @@ span.flatpickr-weekday {
     //!  Flatpickr provide default input as readonly, applying default input style to readonly
     .flatpickr-input[readonly],
     .flatpickr-input ~ .form-control[readonly] {
-      background: light.$input-bg;
+      background: #{light.$input-bg};
     }
 
     .flatpickr-days {
-      background: light.$dropdown-bg;
+      background: #{light.$dropdown-bg};
       padding: 0.75rem $flatpickr-content-padding-x;
       border: light.$dropdown-border-width solid opacify(light.$dropdown-border-color, 0.05);
       border-top: 0;
@@ -760,7 +760,7 @@ span.flatpickr-weekday {
       // ! FIX: OS Windows and Linux Browsers DD Option color
       option.flatpickr-monthDropdown-month {
         color: light.$body-color;
-        background: light.$input-bg;
+        background: #{light.$input-bg};
       }
     }
 
@@ -832,7 +832,7 @@ span.flatpickr-weekday {
 
     .flatpickr-time {
       border: light.$dropdown-border-width solid opacify(light.$dropdown-border-color, 0.05);
-      background: light.$dropdown-bg;
+      background: #{light.$dropdown-bg};
 
       @include light.border-radius(light.$border-radius);
 
@@ -888,12 +888,11 @@ span.flatpickr-weekday {
     }
     .flatpickr-calendar,
     .flatpickr-days {
-      width: calc(#{$flatpickr-width} + #{dark.$dropdown-border-width * 2}) !important;
+      width: calc(#{$flatpickr-width} + calc(#{dark.$dropdown-border-width} * 2)) !important;
     }
 
-    .flatpickr-calendar.hasWeeks,
-    .flatpickr-calendar.hasWeeks .flatpickr-days {
-      width: calc(#{$flatpickr-width + $flatpickr-cell-size} + #{dark.$dropdown-border-width * 3}) !important;
+    .flatpickr-calendar.hasWeeks {
+      width: calc(#{$flatpickr-width + $flatpickr-cell-size} + calc(#{dark.$dropdown-border-width} * 3)) !important;
     }
 
     .flatpickr-calendar.open {
@@ -904,14 +903,14 @@ span.flatpickr-weekday {
     .flatpickr-input:not(.is-invalid):not(.is-valid) ~ .form-control:disabled,
     .flatpickr-input:not(.is-invalid):not(.is-valid)[readonly],
     .flatpickr-input:not(.is-invalid):not(.is-valid) ~ .form-control[readonly] {
-      background-color: dark.$input-bg;
+      background-color: #{dark.$input-bg};
     }
 
     .flatpickr-days {
       border: dark.$dropdown-border-width solid opacify(dark.$dropdown-border-color, 0.05);
       border-top: 0;
       padding: 0.75rem $flatpickr-content-padding-x;
-      background: dark.$dropdown-bg;
+      background: #{dark.$dropdown-bg};
       background-clip: padding-box;
 
       @include dark.border-bottom-radius(dark.$border-radius);
@@ -953,7 +952,7 @@ span.flatpickr-weekday {
       // ! FIX: OS Windows and Linux Browsers DD Option color
       option.flatpickr-monthDropdown-month {
         color: dark.$body-color;
-        background: dark.$input-bg;
+        background: #{dark.$input-bg};
       }
     }
 
@@ -1021,7 +1020,7 @@ span.flatpickr-weekday {
 
     .flatpickr-time {
       border: dark.$dropdown-border-width solid opacify(dark.$dropdown-border-color, 0.05);
-      background: dark.$dropdown-bg;
+      background: #{dark.$dropdown-bg};
 
       @include dark.border-radius(dark.$border-radius);
 

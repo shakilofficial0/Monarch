@@ -15,7 +15,6 @@ $isMenu = ($isMenu ?? true);
 $isFlex = ($isFlex ?? false);
 $isFooter = ($isFooter ?? true);
 $customizerHidden = ($customizerHidden ?? '');
-$pricingModal = ($pricingModal ?? false);
 
 /* HTML Classes */
 $navbarDetached = 'navbar-detached';
@@ -65,12 +64,6 @@ $container = (isset($configData['contentLayout']) && $configData['contentLayout'
             @endif
 
             @yield('content')
-
-            <!-- pricingModal -->
-            @if ($pricingModal)
-            @include('_partials/_modals/modal-pricing')
-            @endif
-            <!--/ pricingModal -->
 
           </div>
           <!-- / Content -->
