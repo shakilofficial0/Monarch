@@ -35,7 +35,32 @@ document.addEventListener('DOMContentLoaded', function (e) {
             },
             terms: {
                 notEmpty: 'Please agree terms & conditions'
-            }
+            },
+            full_name: {
+                notEmpty: 'Please enter your full name'
+            },
+            address: {
+                notEmpty: 'Please enter your address'
+            },
+            state: {
+                notEmpty: 'Please enter your state/city'
+            },
+            country: {
+                notEmpty: 'Please enter your country'
+            },
+            zip: {
+                notEmpty: 'Please enter your zip code'
+            },
+            date_of_birth: {
+                notEmpty: 'Please enter your date of birth'
+            },
+            gender: {
+                notEmpty: 'Please select your Gender'
+            },
+            mobile: {
+                notEmpty: 'Please enter your mobile number'
+            },
+
         };
     } else if(lang == 'bn'){
         var message = {
@@ -62,7 +87,31 @@ document.addEventListener('DOMContentLoaded', function (e) {
             },
             terms: {
                 notEmpty: 'নিয়ম ও শর্তাবলী সম্মত করুন'
-            }
+            },
+            full_name: {
+                notEmpty: 'অনুগ্রহ করে আপনার পুরো নাম লিখুন'
+            },
+            address: {
+                notEmpty: 'অনুগ্রহ করে আপনার ঠিকানা লিখুন'
+            },
+            state: {
+                notEmpty: 'অনুগ্রহ করে আপনার রাষ্ট্র / শহর লিখুন'
+            },
+            country: {
+                notEmpty: 'অনুগ্রহ করে আপনার দেশ লিখুন'
+            },
+            zip: {
+                notEmpty: 'অনুগ্রহ করে আপনার জিপ কোড লিখুন'
+            },
+            date_of_birth: {
+                notEmpty: 'অনুগ্রহ করে আপনার জন্ম তারিখ লিখুন'
+            },
+            gender: {
+                notEmpty: 'অনুগ্রহ করে আপনার লিঙ্গ নির্বাচন করুন'
+            },
+            mobile: {
+                notEmpty: 'অনুগ্রহ করে আপনার মোবাইল নম্বর লিখুন'
+            },
         };
 
     } else if(lang == 'de'){
@@ -90,7 +139,31 @@ document.addEventListener('DOMContentLoaded', function (e) {
             },
             terms: {
                 notEmpty: 'Bitte stimmen Sie den Nutzungsbedingungen zu'
-            }
+            },
+            full_name: {
+                notEmpty: 'Bitte geben Sie Ihren vollständigen Namen ein'
+            },
+            address: {
+                notEmpty: 'Bitte geben Sie Ihre Adresse ein'
+            },
+            state: {
+                notEmpty: 'Bitte geben Sie Ihren Bundesstaat / Ihre Stadt ein'
+            },
+            country: {
+                notEmpty: 'Bitte geben Sie Ihr Land ein'
+            },
+            zip: {
+                notEmpty: 'Bitte geben Sie Ihre Postleitzahl ein'
+            },
+            date_of_birth: {
+                notEmpty: 'Bitte geben Sie Ihr Geburtsdatum ein'
+            },
+            gender: {
+                notEmpty: 'Bitte wählen Sie Ihr Geschlecht aus'
+            },
+            mobile: {
+                notEmpty: 'Bitte geben Sie Ihre Handynummer ein'
+            },
         };
 
 
@@ -119,7 +192,31 @@ document.addEventListener('DOMContentLoaded', function (e) {
             },
             terms: {
                 notEmpty: 'الرجاء الموافقة على الشروط والأحكام'
-            }
+            },
+            full_name: {
+                notEmpty: 'الرجاء إدخال اسمك الكامل'
+            },
+            address: {
+                notEmpty: 'الرجاء إدخال عنوانك'
+            },
+            state: {
+                notEmpty: 'الرجاء إدخال ولايتك / مدينتك'
+            },
+            country: {
+                notEmpty: 'الرجاء إدخال بلدك'
+            },
+            zip: {
+                notEmpty: 'الرجاء إدخال الرمز البريدي'
+            },
+            date_of_birth: {
+                notEmpty: 'الرجاء إدخال تاريخ ميلادك'
+            },
+            gender: {
+                notEmpty: 'الرجاء اختيار جنسك'
+            },
+            mobile: {
+                notEmpty: 'الرجاء إدخال رقم هاتفك المحمول'
+            },
         };
 
     } else if(lang == 'es'){
@@ -147,7 +244,31 @@ document.addEventListener('DOMContentLoaded', function (e) {
             },
             terms: {
                 notEmpty: 'Por favor, acepte los términos y condiciones'
-            }
+            },
+            full_name: {
+                notEmpty: 'Por favor, ingrese su nombre completo'
+            },
+            address: {
+                notEmpty: 'Por favor, ingrese su dirección'
+            },
+            state: {
+                notEmpty: 'Por favor, ingrese su estado / ciudad'
+            },
+            country: {
+                notEmpty: 'Por favor, ingrese su país'
+            },
+            zip: {
+                notEmpty: 'Por favor, ingrese su código postal'
+            },
+            date_of_birth: {
+                notEmpty: 'Por favor, ingrese su fecha de nacimiento'
+            },
+            gender: {
+                notEmpty: 'Por favor, seleccione su género'
+            },
+            mobile: {
+                notEmpty: 'Por favor, ingrese su número de móvil'
+            },
         };
 
 } else if(lang == 'fr'){
@@ -175,7 +296,31 @@ document.addEventListener('DOMContentLoaded', function (e) {
         },
         terms: {
             notEmpty: 'Veuillez accepter les termes et conditions'
-        }
+        },
+        full_name: {
+            notEmpty: 'Veuillez entrer votre nom complet'
+        },
+        address: {
+            notEmpty: 'Veuillez entrer votre adresse'
+        },
+        state: {
+            notEmpty: 'Veuillez entrer votre état / ville'
+        },
+        country: {
+            notEmpty: 'Veuillez entrer votre pays'
+        },
+        zip: {
+            notEmpty: 'Veuillez entrer votre code postal'
+        },
+        date_of_birth: {
+            notEmpty: 'Veuillez entrer votre date de naissance'
+        },
+        gender: {
+            notEmpty: 'Veuillez sélectionner votre sexe'
+        },
+        mobile: {
+            notEmpty: 'Veuillez entrer votre numéro de portable'
+        },
     };
 
 } else if(lang == 'hi'){
@@ -203,7 +348,31 @@ document.addEventListener('DOMContentLoaded', function (e) {
         },
         terms: {
             notEmpty: 'कृपया नियम और शर्तों को स्वीकार करें'
-        }
+        },
+        full_name: {
+            notEmpty: 'कृपया अपना पूरा नाम दर्ज करें'
+        },
+        address: {
+            notEmpty: 'कृपया अपना पता दर्ज करें'
+        },
+        state: {
+            notEmpty: 'कृपया अपना राज्य / शहर दर्ज करें'
+        },
+        country: {
+            notEmpty: 'कृपया अपना देश दर्ज करें'
+        },
+        zip: {
+            notEmpty: 'कृपया अपना ज़िप कोड दर्ज करें'
+        },
+        date_of_birth: {
+            notEmpty: 'कृपया अपना जन्म तिथि दर्ज करें'
+        },
+        gender: {
+            notEmpty: 'कृपया अपना लिंग चुनें'
+        },
+        mobile: {
+            notEmpty: 'कृपया अपना मोबाइल नंबर दर्ज करें'
+        },
     };
 
 } else if(lang == 'it'){
@@ -231,7 +400,31 @@ document.addEventListener('DOMContentLoaded', function (e) {
         },
         terms: {
             notEmpty: 'Per favore, accetta i termini e le condizioni'
-        }
+        },
+        full_name: {
+            notEmpty: 'Per favore, inserisci il tuo nome completo'
+        },
+        address: {
+            notEmpty: 'Per favore, inserisci il tuo indirizzo'
+        },
+        state: {
+            notEmpty: 'Per favore, inserisci il tuo stato / città'
+        },
+        country: {
+            notEmpty: 'Per favore, inserisci il tuo paese'
+        },
+        zip: {
+            notEmpty: 'Per favore, inserisci il tuo codice postale'
+        },
+        date_of_birth: {
+            notEmpty: 'Per favore, inserisci la tua data di nascita'
+        },
+        gender: {
+            notEmpty: 'Per favore, seleziona il tuo genere'
+        },
+        mobile: {
+            notEmpty: 'Per favore, inserisci il tuo numero di cellulare'
+        },
     };
 
 } else if(lang == 'ja'){
@@ -259,7 +452,31 @@ document.addEventListener('DOMContentLoaded', function (e) {
         },
         terms: {
             notEmpty: '利用規約に同意してください'
-        }
+        },
+        full_name: {
+            notEmpty: 'フルネームを入力してください'
+        },
+        address: {
+            notEmpty: '住所を入力してください'
+        },
+        state: {
+            notEmpty: '州/市を入力してください'
+        },
+        country: {
+            notEmpty: '国を入力してください'
+        },
+        zip: {
+            notEmpty: '郵便番号を入力してください'
+        },
+        date_of_birth: {
+            notEmpty: '生年月日を入力してください'
+        },
+        gender: {
+            notEmpty: '性別を選択してください'
+        },
+        mobile: {
+            notEmpty: '携帯電話番号を入力してください'
+        },
     };
 
 } else if(lang == 'ko'){
@@ -287,7 +504,31 @@ document.addEventListener('DOMContentLoaded', function (e) {
         },
         terms: {
             notEmpty: '약관에 동의하세요'
-        }
+        },
+        full_name: {
+            notEmpty: '전체 이름을 입력하세요'
+        },
+        address: {
+            notEmpty: '주소를 입력하세요'
+        },
+        state: {
+            notEmpty: '주 / 도시를 입력하세요'
+        },
+        country: {
+            notEmpty: '국가를 입력하세요'
+        },
+        zip: {
+            notEmpty: '우편 번호를 입력하세요'
+        },
+        date_of_birth: {
+            notEmpty: '생년월일을 입력하세요'
+        },
+        gender: {
+            notEmpty: '성별을 선택하세요'
+        },
+        mobile: {
+            notEmpty: '휴대폰 번호를 입력하세요'
+        },
     };
 
 } else if(lang == 'ru'){
@@ -315,7 +556,31 @@ document.addEventListener('DOMContentLoaded', function (e) {
         },
         terms: {
             notEmpty: 'Пожалуйста, примите условия и положения'
-        }
+        },
+        full_name: {
+            notEmpty: 'Пожалуйста, введите свое полное имя'
+        },
+        address: {
+            notEmpty: 'Пожалуйста, введите свой адрес'
+        },
+        state: {
+            notEmpty: 'Пожалуйста, введите свой штат / город'
+        },
+        country: {
+            notEmpty: 'Пожалуйста, введите свою страну'
+        },
+        zip: {
+            notEmpty: 'Пожалуйста, введите свой почтовый индекс'
+        },
+        date_of_birth: {
+            notEmpty: 'Пожалуйста, введите свой день рождения'
+        },
+        gender: {
+            notEmpty: 'Пожалуйста, выберите свой пол'
+        },
+        mobile: {
+            notEmpty: 'Пожалуйста, введите свой мобильный номер'
+        },
     };
 
 } else {
@@ -343,7 +608,31 @@ document.addEventListener('DOMContentLoaded', function (e) {
             },
             terms: {
                 notEmpty: 'Please agree terms & conditions'
-            }
+            },
+            full_name: {
+                notEmpty: 'Please enter your full name'
+            },
+            address: {
+                notEmpty: 'Please enter your address'
+            },
+            state: {
+                notEmpty: 'Please enter your state/city'
+            },
+            country: {
+                notEmpty: 'Please enter your country'
+            },
+            zip: {
+                notEmpty: 'Please enter your zip code'
+            },
+            date_of_birth: {
+                notEmpty: 'Please enter your date of birth'
+            },
+            gender: {
+                notEmpty: 'Please select your Gender'
+            },
+            mobile: {
+                notEmpty: 'Please enter your mobile number'
+            },
         };
     }
 
@@ -411,13 +700,86 @@ document.addEventListener('DOMContentLoaded', function (e) {
               }
             }
           },
+          'password_confirmation': {
+            validators: {
+              notEmpty: {
+                message: message.confirmPassword.notEmpty
+              },
+              identical: {
+                compare: function () {
+                  return formAuthentication.querySelector('[name="password"]').value;
+                },
+                message: message.confirmPassword.identical
+              },
+              stringLength: {
+                min: 6,
+                message: message.confirmPassword.stringLength
+              }
+            }
+          },
           'register-privacy-policy': {
             validators: {
               notEmpty: {
                 message: message.terms.notEmpty
               }
             }
-          }
+          },
+            name: {
+                validators: {
+                notEmpty: {
+                    message: message.full_name.notEmpty
+                }
+                }
+            },
+            address: {
+                validators: {
+                notEmpty: {
+                    message: message.address.notEmpty
+                }
+                }
+            },
+            state: {
+                validators: {
+                notEmpty: {
+                    message: message.state.notEmpty
+                }
+                }
+            },
+            country: {
+                validators: {
+                notEmpty: {
+                    message: message.country.notEmpty
+                }
+                }
+            },
+            zip: {
+                validators: {
+                notEmpty: {
+                    message: message.zip.notEmpty
+                }
+                }
+            },
+            date_of_birth: {
+                validators: {
+                notEmpty: {
+                    message: message.date_of_birth.notEmpty
+                }
+                }
+            },
+            gender: {
+                validators: {
+                notEmpty: {
+                    message: message.gender.notEmpty
+                }
+                }
+            },
+            mobile: {
+                validators: {
+                notEmpty: {
+                    message: message.mobile.notEmpty
+                }
+                }
+            },
         },
         plugins: {
           trigger: new FormValidation.plugins.Trigger(),

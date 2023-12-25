@@ -53,4 +53,15 @@ return [
     'sign_in_instead' => 'Sign in instead',
     'registration_unavailable' => 'Registration Closed',
     'registration_unavailable_details' => 'Sorry But we are not accepting new user anymore. Please Get an invitation to Sign up Or wait until we change our mind. Thank you',
+    'address' => 'Address',
+    'state_city' => 'State/City',
+    'zip' => 'Zip Code',
+    'date_of_birth' => 'Birth Date',
+    'gender' => 'Gender',
+    'country' => 'Country',
+    'gender_male' => 'Male',
+    'gender_female' => 'Female',
+    'gender_others' => 'Others',
+
+
 ];

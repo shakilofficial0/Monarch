@@ -1261,7 +1261,98 @@ TemplateCustomizer.LANGUAGES = {
     content_label: 'Inhalt',
     layout_navbar_label: 'Art der Navigationsleiste',
     direction_label: 'Richtung'
-  }
+  },
+  bn: {
+    panel_header: 'টেমপ্লেট কাস্টমাইজার',
+    panel_sub_header: 'সাথে সাথে কাস্টমাইজ করুন এবং প্রিভিউ করুন',
+    theming_header: 'থিমিং',
+    style_label: 'স্টাইল (মোড)',
+    theme_label: 'থিম',
+    layout_header: 'বিন্যাস',
+    layout_label: 'মেনু (নেভিগেশন)',
+    layout_header_label: 'হেডার টাইপ',
+    content_label: 'সন্তুষ্টি',
+    layout_navbar_label: 'নেভিগেশন বারের ধরণ',
+    direction_label: 'দিক'
+  },
+  es: {
+    panel_header: 'Personalizador de plantillas',
+    panel_sub_header: 'Personaliza y previsualiza en tiempo real',
+    theming_header: 'Tematización',
+    style_label: 'Estilo (Modo)',
+    theme_label: 'Temas',
+    layout_header: 'Diseño',
+    layout_label: 'Menú (Navegación)',
+    layout_header_label: 'Tipos de encabezado',
+    content_label: 'Contenido',
+    layout_navbar_label: 'Tipo de barra de navegación',
+    direction_label: 'Dirección'
+  },
+  hi: {
+    panel_header: 'टेम्पलेट कस्टमाइज़र',
+    panel_sub_header: 'कस्टमाइज़ और रियल टाइम में पूर्वावलोकन करें',
+    theming_header: 'थीमिंग',
+    style_label: 'शैली (मोड)',
+    theme_label: 'थीम्स',
+    layout_header: 'ख़ाका',
+    layout_label: 'मेनू (नेविगेशन)',
+    layout_header_label: 'हेडर प्रकार',
+    content_label: 'सामग्री',
+    layout_navbar_label: 'नेविगेशन बार का प्रकार',
+    direction_label: 'दिशा'
+  },
+  it: {
+    panel_header: 'Personalizzatore di modelli',
+    panel_sub_header: 'Personalizza e visualizza in tempo reale',
+    theming_header: 'Tematica',
+    style_label: 'Stile (Modalità)',
+    theme_label: 'Temi',
+    layout_header: 'Layout',
+    layout_label: 'Menu (Navigazione)',
+    layout_header_label: 'Tipi di intestazione',
+    content_label: 'Contenuto',
+    layout_navbar_label: 'Tipo di barra di navigazione',
+    direction_label: 'Direzione'
+  },
+  ja: {
+    panel_header: 'テンプレートカスタマイザー',
+    panel_sub_header: 'リアルタイムでカスタマイズしてプレビュー',
+    theming_header: 'テーマ',
+    style_label: 'スタイル（モード）',
+    theme_label: 'テーマ',
+    layout_header: 'レイアウト',
+    layout_label: 'メニュー（ナビゲーション）',
+    layout_header_label: 'ヘッダータイプ',
+    content_label: 'コンテンツ',
+    layout_navbar_label: 'ナビゲーションバーのタイプ',
+    direction_label: '方向'
+  },
+  ko: {
+    panel_header: '템플릿 사용자 정의',
+    panel_sub_header: '실시간으로 사용자 정의하고 미리보기',
+    theming_header: '테마',
+    style_label: '스타일 (모드)',
+    theme_label: '테마',
+    layout_header: '레이아웃',
+    layout_label: '메뉴 (탐색)',
+    layout_header_label: '헤더 유형',
+    content_label: '함유량',
+    layout_navbar_label: '탐색 모음 유형',
+    direction_label: '방향'
+  },
+  ru: {
+    panel_header: 'Настройщик шаблонов',
+    panel_sub_header: 'Настройка и предварительный просмотр в реальном времени',
+    theming_header: 'Тематизация',
+    style_label: 'Стиль (Режим)',
+    theme_label: 'Темы',
+    layout_header: 'Макет',
+    layout_label: 'Меню (Навигация)',
+    layout_header_label: 'Типы заголовков',
+    content_label: 'Содержание',
+    layout_navbar_label: 'Тип панели навигации',
+    direction_label: 'Направление'
+  },
 };
 
 export { TemplateCustomizer };

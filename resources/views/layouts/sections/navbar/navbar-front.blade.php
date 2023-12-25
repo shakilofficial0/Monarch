@@ -16,7 +16,7 @@ $activeClass = in_array($currentRouteName, $activeRoutes) ? 'active' : '';
         <!-- Mobile menu toggle: End-->
         <a href="javascript:;" class="app-brand-link">
           <span class="app-brand-logo demo"><img src="{{ asset('assets/img/logo/solo-coloured.png') }}" alt="Brand Logo" class="img-fluid" /></span>
-          <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1">{{ config('variables.templateName') }}</span>
+          <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1" style="max-width: 100px;">{{ config('variables.templateName') }}</span>
         </a>
       </div>
       <!-- Menu logo wrapper: End -->

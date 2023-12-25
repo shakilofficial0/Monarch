@@ -53,6 +53,14 @@ return [
     'sign_in_instead' => 'Stattdessen anmelden',
     'registration_unavailable' => 'Registrierung geschlossen',
     'registration_unavailable_details' => 'Entschuldigung, im Moment akzeptieren wir keine neuen Benutzer. Eine Einladung von unserem bestehenden Benutzer könnte Ihren Anmelde-Wunsch erfüllen. Andernfalls müssen Sie warten, bis wir unsere Meinung ändern. Danke',
-    
+    'address' => 'Adresse',
+    'state_city' => 'Bundesland / Stadt',
+    'zip' => 'Postleitzahl',
+    'gender' => 'Geschlecht',
+    'date_of_birth' =>  'Geburtsdatum',
+    'country' => 'Land',
+    'gender_male' => 'Männlich',
+    'gender_female' => 'Weiblich',
+    'gender_others' => 'Andere',
 
 ];

@@ -39,7 +39,7 @@ class Helpers
       'layoutNavbarOptions',
       'themes',
       ],
-      // 'defaultLanguage'=>'bn',
+      //   'defaultLanguage'=>'en',
     ];
 
     // if any key missing of array from custom.php file it will be merge and set a default value from dataDefault array and store in data variable
@@ -91,11 +91,16 @@ class Helpers
         }
       }
     }
+    $styleVal = $data['myStyle'] == "dark" ? "dark" : "light";
+    if (isset($_COOKIE['style'])) {
+      $styleVal = $_COOKIE['style'];
+    }
     //layout classes
     $layoutClasses = [
       'layout' => $data['myLayout'],
       'theme' => $data['myTheme'],
-      'style' => $data['myStyle'],
+      'style' => $styleVal,
+      'styleOpt' => $data['myStyle'],
       'rtlSupport' => $data['myRTLSupport'],
       'rtlMode' => $data['myRTLMode'],
       'textDirection' => $data['myRTLMode'],
@@ -156,16 +161,16 @@ class Helpers
 
     // Show DropdownOnHover for Horizontal Menu
     if ($layoutClasses['showDropdownOnHover'] == true) {
-      $layoutClasses['showDropdownOnHover'] = 'true';
+      $layoutClasses['showDropdownOnHover'] = true;
     } else {
-      $layoutClasses['showDropdownOnHover'] = 'false';
+      $layoutClasses['showDropdownOnHover'] = false;
     }
 
     // To hide/show display customizer UI, not js
     if ($layoutClasses['displayCustomizer'] == true) {
-      $layoutClasses['displayCustomizer'] = 'true';
+      $layoutClasses['displayCustomizer'] = true;
     } else {
-      $layoutClasses['displayCustomizer'] = 'false';
+      $layoutClasses['displayCustomizer'] = false;
     }
 
     return $layoutClasses;
